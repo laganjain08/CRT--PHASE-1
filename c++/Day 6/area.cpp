@@ -38,7 +38,7 @@ Area(){
     side=0;
     radius=0;
 }
-void dis(){
+    void dis(){
     cout<<"No data is given"<<endl;
 }   
 };
