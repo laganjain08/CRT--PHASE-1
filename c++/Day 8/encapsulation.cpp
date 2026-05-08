@@ -4,26 +4,33 @@ class ATM{
     private:
     int balance;
     public:
-    ATM(int b){
-        balance=b;
+    void setBalance(int balance){
+        this->balance=balance;
     }
+   
     void withdraw(int amount){
         if(amount>balance){
             cout<<"Insufficient balance"<<endl;
         }
         else{
             balance-=amount;
-            cout<<"Current amount withdrawn:"<<amount<<endl;
+            cout<<"Amount withdrawn:"<<amount<<endl;
         }
     }
-    void showBalance(){
-     cout<<"balance:"<<balance<<endl;
+    int getBalance(){
+    return balance;
     }
 };
 int main(){
-    ATM a(10000);
+    ATM a;
+    int n;
+    cin>>n;
+    a.setBalance(n);
+    cout<<"Balance is:"<<a.getBalance()<<endl;
+   
     a.withdraw(5000);
-    a.showBalance();
+     cout<<"Amount remaining  is:"<<a.getBalance()<<endl;
+
 
     
     return 0;
