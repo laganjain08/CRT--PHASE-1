@@ -1,6 +1,6 @@
 #include <iostream>
 using namespace std;
-void swap_array(int &a,int &b){//call by reference{
+void swap_array(int &a,int &b){//call by reference
     int temp=a;
     a=b;
     b=temp;
