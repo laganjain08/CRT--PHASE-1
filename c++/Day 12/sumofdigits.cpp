@@ -7,7 +7,7 @@ int sumofDigits(int n){
 
 }
 int main(){
-    int num=1234;
+    int num=5137;
     cout<<"Sum of digits will be:"<<sumofDigits(num)<<endl;
     return 0;
 }
