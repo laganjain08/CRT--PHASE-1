@@ -63,5 +63,4 @@ void push(int val){
  cout<<"is stack empty? "<<(s.isEmpty()?"yes":"no")<<endl;
  return 0;
 
-
     }
